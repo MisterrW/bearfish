@@ -7,7 +7,7 @@ class River
     return @fishes.length
   end
 
-  def serve_fish(number)
+  def serve_last_fish(number)
     if @fishes.length >= number
       return @fishes.pop(number)
     end

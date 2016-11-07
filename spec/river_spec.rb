@@ -19,7 +19,7 @@ class TestRiver < Minitest::Test
   end
 
   def test_can_serve_fish()
-    fish = @river.serve_fish(1)
+    fish = @river.serve_last_fish(1)
     assert_equal("Agnes", fish[0].name)
     puts fish
   end
